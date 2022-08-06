@@ -53,6 +53,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [TailwindCSS](https://tailwindcss.com/docs/guides/create-react-app) - Install Tailwind CSS with Create React App
 - [Create React App](https://create-react-app.dev/docs/adding-custom-environment-variables/) - Adding Custom Environment Variables (hide API's key)
 - [StackOverflow](https://stackoverflow.com/questions/24282158/how-to-remove-the-white-space-at-the-start-of-the-string) - How to remove the white space at the start of the string
+- [PluralSight](https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react) - How to Render `<a>` with Optional href in React
 
 ## Author
 

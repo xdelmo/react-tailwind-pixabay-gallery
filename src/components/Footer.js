@@ -1,11 +1,14 @@
 import React from "react";
 
 export default function Footer() {
+  //  Render `<a>` with Optional href
+  let anchorURL = "#";
+
   return (
     <footer className="text-white body-font bg-teal-700 drop-shadow-lg">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a
-          href="#"
+          href={anchorURL}
           className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
         >
           <svg
@@ -15,9 +18,9 @@ export default function Footer() {
             fill="currentColor"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
           {/* <span className="ml-3 text-xl">Gallery</span> */}
@@ -41,9 +44,9 @@ export default function Footer() {
             <svg
               fill="currentColor"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="0"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
