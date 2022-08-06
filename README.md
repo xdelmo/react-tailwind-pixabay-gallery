@@ -26,7 +26,7 @@ This is photo gallery built with React, Tailwind and Pixabay's APIs
 
 ### Screenshot
 
-![screenshot](/assets/screenshot.png)
+![screenshot](/src/assets/screenshot.png)
 
 ### Links
 
