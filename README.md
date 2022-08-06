@@ -1,6 +1,6 @@
 # Photo Gallery
 
-This is photo gallery built with React, Tailwind and Pixabay's APIs
+This is a photo gallery built with React, Tailwind and Pixabay's APIs
 
 ## Table of contents
 
@@ -55,6 +55,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Create React App](https://create-react-app.dev/docs/adding-custom-environment-variables/) - Adding Custom Environment Variables (hide API's key)
 - [StackOverflow](https://stackoverflow.com/questions/24282158/how-to-remove-the-white-space-at-the-start-of-the-string) - How to remove the white space at the start of the string
 - [PluralSight](https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react) - How to Render `<a>` with Optional href in React
+- [StackOverflow](https://stackoverflow.com/questions/62295172/onclick-save-image-as-in-react) - onClick "save image as" in React
+- [StackOverflow](https://stackoverflow.com/questions/70887550/how-to-change-the-color-on-top-an-image-using-hover-in-tailwind-css) - How to change the color on top an image using hover in Tailwind css
 
 ## Author
 
