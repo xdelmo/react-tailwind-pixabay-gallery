@@ -30,6 +30,7 @@ This is photo gallery built with React, Tailwind and Pixabay's APIs
 
 ### Links
 
+- Live Site URL: [@Netlify](https://react-tailwind-pixabay-gallery-xdelmo.netlify.app/)
 - Solution URL: [@GitHub](https://github.com/xdelmo/react-tailwind-pixabay-gallery)
 
 ### Getting Started with Create React App

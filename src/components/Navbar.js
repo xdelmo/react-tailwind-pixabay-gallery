@@ -5,7 +5,7 @@ function Navbar() {
   let anchorURL = "#";
 
   return (
-    <header className="text-white bg-teal-700 body-font sm:p-5 flex-col md:flex-row items-center drop-shadow-lg">
+    <header className="text-white bg-teal-700 body-font sm:p-5 py-3 flex-col md:flex-row items-center drop-shadow-lg">
       <div className="flex justify-between flex-col md:flex-row items-center container mx-auto px-5">
         <a
           href={anchorURL}
