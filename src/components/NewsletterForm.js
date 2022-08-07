@@ -11,6 +11,8 @@ function NewsletterForm() {
   }
 
   React.useEffect(() => {
+    // Regular expression to match string like
+    // "any word with atleast 1 letter" + "@" + "any word with atleast 1 letter" + "." + "final word with atleast 2 letters"
     const validation = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
     if (validation) {
       setIsEmailValid(true);
