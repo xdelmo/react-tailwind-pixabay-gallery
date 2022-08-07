@@ -5,15 +5,15 @@ function Navbar() {
   let anchorURL = "#";
 
   return (
-    <header className="text-white bg-teal-700 body-font sm:p-5 py-3 flex-col md:flex-row items-center drop-shadow-lg">
-      <div className="flex justify-between flex-col md:flex-row items-center container mx-auto px-5">
+    <header className="flex-col items-center py-5 text-white bg-teal-700 body-font md:flex-row drop-shadow-lg">
+      <div className="container flex flex-col items-center justify-between px-5 mx-auto md:flex-row">
         <a
           href={anchorURL}
-          className="flex title-font font-medium items-center mb-4 md:mb-0"
+          className="flex items-center mb-4 font-medium title-font md:mb-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

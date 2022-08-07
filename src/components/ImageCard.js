@@ -29,16 +29,16 @@ function ImageCard({ image }) {
     };
   }
   return (
-    <div className="rounded overflow-hidden shadow-lg">
-      <div class="bg-blue-200">
+    <div className="overflow-hidden rounded shadow-lg">
+      <div className="bg-blue-200">
         <img
           src={image.webformatURL}
           alt="search result"
-          className="hover:object-none hover:opacity-25 transition-all"
+          className="transition-all hover:object-none hover:opacity-25"
         />
       </div>
       <div className="px-6 py-4">
-        <div className="font-bold text-teal-700 text-xl mb-2">
+        <div className="mb-2 text-xl font-bold text-teal-700">
           Photo by {image.user}
         </div>
 
@@ -46,7 +46,7 @@ function ImageCard({ image }) {
           <li className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 inline-block mr-1"
+              className="inline-block w-5 h-5 mr-1"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -62,7 +62,7 @@ function ImageCard({ image }) {
           <li className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 inline-block mr-1"
+              className="inline-block w-5 h-5 mr-1"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -77,7 +77,7 @@ function ImageCard({ image }) {
           <li className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 inline-block mr-1"
+              className="inline-block w-5 h-5 mr-1"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -88,14 +88,14 @@ function ImageCard({ image }) {
         </ul>
       </div>
       {/* DOWNLOAD BUTTON */}
-      <div className=" px-6 py-0">
+      <div className="px-6 py-0 ">
         <button
-          className=" bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 hover:drop-shadow-lg text-white font-bold py-2 px-4 rounded inline-flex items-center hover:transition-all"
+          className="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded  hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
           onClick={() => downloadImage(image.webformatURL, image.pageURL)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 inline-block mr-1"
+            className="inline-block w-5 h-5 mr-1"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -113,7 +113,7 @@ function ImageCard({ image }) {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mt-2"
+            className="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
           >
             #{tag}
           </span>

@@ -5,15 +5,15 @@ export default function Footer() {
   let anchorURL = "#";
 
   return (
-    <footer className="text-white body-font bg-teal-700 drop-shadow-lg">
-      <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <footer className="text-white bg-teal-700 body-font drop-shadow-lg">
+      <div className="container flex flex-col items-center px-5 py-5 mx-auto sm:flex-row">
         <a
           href={anchorURL}
-          className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-red-700"
+            className="w-5 h-5 text-red-700"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -25,18 +25,18 @@ export default function Footer() {
           </svg>
           {/* <span className="ml-3 text-xl">Gallery</span> */}
         </a>
-        <p className="text-sm  sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <p className="mt-4 text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">
           © 2022 Emanuele Del Monte —
           <a
             href="https://github.com/xdelmo"
-            className=" ml-1"
+            className="ml-1 "
             rel="noopener noreferrer"
             target="_blank"
           >
             @xdelmo
           </a>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
           <a
             className="ml-3"
             href="https://www.linkedin.com/in/emanueledelmonte/"

@@ -12,6 +12,7 @@ This is a photo gallery built with React, Tailwind and Pixabay's APIs
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
+  - [Continued development](#continued-development)
 - [Author](#author)
 - [Credits](#credits)
 
@@ -57,6 +58,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [PluralSight](https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react) - How to Render `<a>` with Optional href in React
 - [StackOverflow](https://stackoverflow.com/questions/62295172/onclick-save-image-as-in-react) - onClick "save image as" in React
 - [StackOverflow](https://stackoverflow.com/questions/70887550/how-to-change-the-color-on-top-an-image-using-hover-in-tailwind-css) - How to change the color on top an image using hover in Tailwind css
+- [learnetto](https://learnetto.com/blog/react-form-validation)&[ms_yogii](https://dev.to/ms_yogii/form-inputs-with-react-and-tailwind-57o2) - How to implement form validation in React
+
+### Continued development
+
+I'd like to:
+
+- ~~Add a button to download images~~
+- ~~Add a newsletter subscription form with validation~~
+- Search new photos clicking on tags
 
 ## Author
 
@@ -66,3 +76,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [Pixabay](https://pixabay.com/service/about/api/) - APIs
 - [Heroicons](https://heroicons.com/) - Icons
+- [GetWaves](https://getwaves.io/) - Wave SVG
