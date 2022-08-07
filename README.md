@@ -43,6 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Built with
 
 - Semantic HTML5 markup
+- CSS custom properties
 - CSS Grid Layout
 - React.JS
 - FlexBox
@@ -58,7 +59,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [PluralSight](https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react) - How to Render `<a>` with Optional href in React
 - [StackOverflow](https://stackoverflow.com/questions/62295172/onclick-save-image-as-in-react) - onClick "save image as" in React
 - [StackOverflow](https://stackoverflow.com/questions/70887550/how-to-change-the-color-on-top-an-image-using-hover-in-tailwind-css) - How to change the color on top an image using hover in Tailwind css
-- [learnetto](https://learnetto.com/blog/react-form-validation)&[ms_yogii](https://dev.to/ms_yogii/form-inputs-with-react-and-tailwind-57o2) - How to implement form validation in React
+- [learnetto](https://learnetto.com/blog/react-form-validation) & [ms_yogii](https://dev.to/ms_yogii/form-inputs-with-react-and-tailwind-57o2) - How to implement form validation in React
 
 ### Continued development
 
@@ -66,6 +67,7 @@ I'd like to:
 
 - ~~Add a button to download images~~
 - ~~Add a newsletter subscription form with validation~~
+- ~~Save last search term on localStorage~~
 - Search new photos clicking on tags
 
 ## Author

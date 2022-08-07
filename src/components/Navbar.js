@@ -1,9 +1,14 @@
 import React from "react";
 
-function Navbar() {
+function Navbar({ searchText }) {
   //  Render `<a>` with Optional href
   let anchorURL = "#";
-  const logoURL = "/images/logo-gallery.png";
+  const logoURL = "/images/logo.png";
+
+  // Reset term to empty string everytime user clicks on logo
+  function resetSearch() {
+    searchText("");
+  }
 
   return (
     <header className="flex-col items-center py-5 text-white bg-teal-700 body-font md:flex-row drop-shadow-lg">
@@ -11,6 +16,7 @@ function Navbar() {
         <a
           href={anchorURL}
           className="flex items-center mb-4 font-medium title-font md:mb-0"
+          onClick={resetSearch}
         >
           <img src={logoURL} alt="logo" className="w-8" />
           <span className="ml-3 text-2xl">Shutter Up</span>

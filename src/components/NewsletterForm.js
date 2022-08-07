@@ -55,11 +55,12 @@ function NewsletterForm() {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            className={`text-black p-1 border transition duration-150 ease-in-out ${
+            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-800 ${
               isEmailValid ? "bg-green-300" : "bg-red-300"
             }`}
             name="email"
             value={email}
+            placeholder="your@email.com"
             onChange={(event) => handleUserInput(event)}
           />
           {/* {!isEmailValid && <p>Email not valid</p>} */}

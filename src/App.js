@@ -8,7 +8,10 @@ import NewsletterForm from "./components/NewsletterForm";
 export default function App() {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [term, setTerm] = useState("");
+  // Create and initialize term to localStorage variable or empy string
+  const [term, setTerm] = useState(
+    JSON.parse(localStorage.getItem("term")) || ""
+  );
 
   useEffect(() => {
     // Hide API key using an external .env file
@@ -21,14 +24,17 @@ export default function App() {
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
+
+    // Set term to localStorage everytime term changes onSubmit
+    localStorage.setItem("term", JSON.stringify(term));
   }, [term]);
 
   return (
     <div className="app">
-      <Navbar />
+      <Navbar searchText={(text) => setTerm(text)} />
       <main>
         <div className="container min-h-screen p-5 mx-auto">
-          <ImageSearch searchText={(text) => setTerm(text)} />
+          <ImageSearch searchText={(event) => setTerm(event)} />
           {/* Error message */}
           {!isLoading && images.length === 0 && (
             <h1 className="mx-auto text-6xl text-center">No Images Found</h1>
@@ -63,11 +69,15 @@ export default function App() {
           )}
         </div>
       </main>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        className="drop-shadow-lg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#0F766E"
           fillOpacity="1"
-          d="M0,160L80,170.7C160,181,320,203,480,224C640,245,800,267,960,250.7C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          d="M0,224L80,240C160,256,320,288,480,282.7C640,277,800,235,960,218.7C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
       </svg>
       <NewsletterForm />
