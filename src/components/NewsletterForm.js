@@ -55,7 +55,7 @@ function NewsletterForm() {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-800 ${
+            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-600 ${
               isEmailValid ? "bg-green-300" : "bg-red-300"
             }`}
             name="email"
