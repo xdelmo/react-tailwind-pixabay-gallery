@@ -21,9 +21,17 @@ function NewsletterForm() {
     }
   }, [email]);
 
+  // Utility variable to improve accessibility to form input
+  let backgroundColorInput = "bg-white";
+  if (email.length > 0 && !isEmailValid) {
+    backgroundColorInput = "bg-red-300";
+  } else if (isEmailValid) {
+    backgroundColorInput = "bg-green-300";
+  }
+
   return (
-    <form className="py-5 bg-teal-700 drop-shadow-lg">
-      <div className="container flex flex-col items-center gap-5 px-5 mx-auto text-white justify-evenly md:flex-row">
+    <form className="bg-teal-700 drop-shadow-lg">
+      <div className="container flex flex-col items-center gap-5 px-5 pb-5 mx-auto text-white justify-evenly md:flex-row">
         {/* FIRST BLOCK TEXT FORM */}
         <div className="flex flex-col items-start justify-center">
           <div className="flex flex-row items-center">
@@ -55,15 +63,17 @@ function NewsletterForm() {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-600 ${
-              isEmailValid ? "bg-green-300" : "bg-red-300"
-            }`}
+            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-600 ${backgroundColorInput}`}
             name="email"
             value={email}
             placeholder="your@email.com"
             onChange={(event) => handleUserInput(event)}
           />
-          {/* {!isEmailValid && <p>Email not valid</p>} */}
+          {!isEmailValid && email.length > 0 && (
+            <p className="text-xs italic text-gray-300">
+              Please type a valid email
+            </p>
+          )}
           {isEmailValid ? (
             <button
               type="submit"
