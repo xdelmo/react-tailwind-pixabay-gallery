@@ -60,6 +60,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [StackOverflow](https://stackoverflow.com/questions/62295172/onclick-save-image-as-in-react) - onClick "save image as" in React
 - [StackOverflow](https://stackoverflow.com/questions/70887550/how-to-change-the-color-on-top-an-image-using-hover-in-tailwind-css) - How to change the color on top an image using hover in Tailwind css
 - [learnetto](https://learnetto.com/blog/react-form-validation) & [ms_yogii](https://dev.to/ms_yogii/form-inputs-with-react-and-tailwind-57o2) - How to implement form validation in React
+- [BobbyHadz](https://bobbyhadz.com/blog/react-scroll-to-top#:~:text=Use%20the%20window.,of%20coordinates%20in%20the%20document.) - Scroll to the top of the Page in React.js
+- [StackOverflow](https://stackoverflow.com/questions/26069238/call-multiple-functions-onclick-reactjs) - Call multiple functions onClick ReactJS
 
 ### Continued development
 
@@ -68,7 +70,7 @@ I'd like to:
 - ~~Add a button to download images~~
 - ~~Add a newsletter subscription form with validation~~
 - ~~Save last search term on localStorage~~
-- Search new photos clicking on tags
+- ~~Search new photos clicking on tags~~
 
 ## Author
 

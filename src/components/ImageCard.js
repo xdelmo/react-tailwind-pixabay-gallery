@@ -1,7 +1,7 @@
 import React from "react";
 
 // Destructuring of props using {image}
-function ImageCard({ image }) {
+function ImageCard({ image, searchForTag }) {
   // image.tags in API is a unique string and each tag is separated from the others by a comma
   // use split(",") to create an array that contains n value for n words in image.tags
   let tags = image.tags.split(",");
@@ -9,6 +9,11 @@ function ImageCard({ image }) {
   tags = tags.map((tag) => {
     return tag.trim();
   });
+
+  // function to set term state in App to the hashtag clicked
+  function searchTag(hashtag) {
+    searchForTag(hashtag);
+  }
 
   function downloadImage(src, url) {
     const img = new Image();
@@ -30,11 +35,11 @@ function ImageCard({ image }) {
   }
   return (
     <div className="overflow-hidden rounded shadow-lg">
-      <div className="bg-blue-200">
+      <div>
         <img
           src={image.webformatURL}
           alt="search result"
-          className="transition-all hover:object-none hover:opacity-25"
+          className="transition-all hover:object-none hover:brightness-50"
         />
       </div>
       <div className="px-6 py-4">
@@ -90,7 +95,7 @@ function ImageCard({ image }) {
       {/* DOWNLOAD BUTTON */}
       <div className="px-6 py-0 ">
         <button
-          className="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded  hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
+          className="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
           onClick={() => downloadImage(image.webformatURL, image.pageURL)}
         >
           <svg
@@ -113,7 +118,14 @@ function ImageCard({ image }) {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
+            // onClick run at the same time 2 function
+            // 👇️ scroll to top on page load
+
+            onClick={() => {
+              searchTag(tag);
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-700 hover:text-white hover:drop-shadow-md"
           >
             #{tag}
           </span>

@@ -63,7 +63,11 @@ export default function App() {
           ) : (
             <div className="grid gap-4 mt-16 md:grid-cols-2 lg:grid-cols-3">
               {images.map((image) => (
-                <ImageCard key={image.id} image={image} />
+                <ImageCard
+                  key={image.id}
+                  image={image}
+                  searchForTag={(tag) => setTerm(tag)}
+                />
               ))}
             </div>
           )}

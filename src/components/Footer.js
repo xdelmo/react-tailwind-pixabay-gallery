@@ -8,6 +8,9 @@ export default function Footer() {
     <footer className="text-white bg-teal-700 body-font drop-shadow-lg">
       <div className="container flex flex-col items-center px-5 py-5 mx-auto sm:flex-row">
         <a
+          onClick={() =>
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+          }
           href={anchorURL}
           className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
         >
