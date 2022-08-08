@@ -31,7 +31,7 @@ function NewsletterForm() {
 
   return (
     <form className="bg-teal-700 drop-shadow-lg">
-      <div className="container flex flex-col items-center justify-between gap-5 px-5 py-8 mx-auto text-white md:flex-row">
+      <div className="container flex flex-col items-center justify-around gap-5 px-5 py-8 mx-auto text-white md:flex-row">
         {/* FIRST BLOCK TEXT FORM */}
         <div className="flex flex-col items-start justify-center">
           <div className="flex flex-row items-center">
