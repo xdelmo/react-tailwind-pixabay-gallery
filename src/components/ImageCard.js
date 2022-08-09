@@ -116,7 +116,7 @@ function ImageCard({ image, searchForTag }) {
         {/* DOWNLOAD BUTTON */}
         <div className="px-4 py-0 ">
           <button
-            className="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
+            className="inline-flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
             onClick={() => downloadImage(image.webformatURL, image.pageURL)}
           >
             <svg
@@ -145,7 +145,7 @@ function ImageCard({ image, searchForTag }) {
                 searchTag(tag);
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
-              className="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-700 hover:text-white hover:drop-shadow-md"
+              className="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 transition-all bg-gray-200 rounded-full cursor-pointer hover:bg-gray-700 hover:text-white hover:drop-shadow-md"
             >
               #{tag}
             </span>

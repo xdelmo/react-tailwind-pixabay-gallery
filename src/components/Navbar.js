@@ -11,19 +11,41 @@ function Navbar({ searchText }) {
   }
 
   return (
-    <header className="flex-col items-center py-5 text-white bg-teal-700 body-font md:flex-row drop-shadow-lg">
-      <div className="container flex flex-col items-center justify-between px-5 mx-auto md:flex-row">
+    <header className="flex-col items-center py-5 text-white bg-teal-700 body-font drop-shadow-lg">
+      <div className="container flex items-center justify-between px-5 mx-auto">
         <a
           href={anchorURL}
-          className="flex items-center mb-4 font-medium title-font md:mb-0"
+          className="flex items-center font-medium title-font md:mb-0"
           onClick={resetSearch}
         >
           <img src={logoURL} alt="logo" className="w-8" />
           <span className="ml-3 text-2xl">Shutter Up</span>
         </a>
-        <span className="text-center">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 md:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <div className="hidden md:block">
+          <button>Log In</button>
+          <button className="px-2 py-1 ml-4 text-sm font-bold text-white transition-all bg-blue-500 border-4 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg">
+            Sign up
+          </button>
+        </div>
+        {/* <span className="text-center lg:hidden">
           Built with React, Tailwind and Pixabay's APIs
-        </span>
+        </span> */}
       </div>
     </header>
   );

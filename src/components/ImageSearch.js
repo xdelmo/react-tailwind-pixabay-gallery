@@ -30,7 +30,7 @@ function ImageSearch({ searchText }) {
             placeholder="Search Image Term..."
           />
           <button
-            className="flex flex-row flex-shrink-0 px-2 py-1 text-sm font-bold text-white bg-blue-500 border-4 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg"
+            className="flex flex-row flex-shrink-0 px-2 py-1 text-sm font-bold text-white transition-all bg-blue-500 border-4 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg"
             type="submit"
           >
             <svg

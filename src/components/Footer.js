@@ -32,7 +32,7 @@ export default function Footer() {
           © 2022 Emanuele Del Monte —
           <a
             href="https://github.com/xdelmo"
-            className="ml-1 "
+            className="ml-1 transition-all hover:text-gray-300"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -40,14 +40,18 @@ export default function Footer() {
           </a>
         </p>
         <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
-          <a href="https://www.linkedin.com/in/emanueledelmonte/">
+          <a
+            href="https://www.linkedin.com/in/emanueledelmonte/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <svg
               fill="currentColor"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="0"
-              className="w-5 h-5"
+              className="w-5 h-5 transition-all hover:text-blue-500"
               viewBox="0 0 24 24"
             >
               <path

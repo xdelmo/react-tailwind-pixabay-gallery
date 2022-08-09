@@ -77,7 +77,7 @@ function NewsletterForm() {
           {isEmailValid ? (
             <button
               type="submit"
-              className="items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
+              className="items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
             >
               Sign up
             </button>
