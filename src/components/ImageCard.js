@@ -49,6 +49,7 @@ function ImageCard({ image, searchForTag }) {
 
   return (
     <div className="flex flex-col flex-grow">
+      {/* Avatar + nickname section */}
       <div className="flex items-center justify-start gap-2 px-4 py-3 text-xl font-bold">
         <img
           className="w-6 rounded-full ring-2 ring-teal-500 "
@@ -63,7 +64,7 @@ function ImageCard({ image, searchForTag }) {
           <img
             src={image.webformatURL}
             alt="search result"
-            className="transition-all hover:object-none hover:brightness-50"
+            className="transition-all ease-in-out hover:brightness-75"
           />
         </div>
         <div className="px-4 py-4">
@@ -140,7 +141,6 @@ function ImageCard({ image, searchForTag }) {
               key={index}
               // onClick run at the same time 2 function
               // 👇️ scroll to top on page load
-
               onClick={() => {
                 searchTag(tag);
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

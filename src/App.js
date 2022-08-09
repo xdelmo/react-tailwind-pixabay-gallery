@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import ImageSearch from "./components/ImageSearch";
 import Navbar from "./components/Navbar";
 import NewsletterForm from "./components/NewsletterForm";
+import Trends from "./components/Trends";
 
 export default function App() {
   const [images, setImages] = useState([]);
@@ -32,6 +33,7 @@ export default function App() {
   return (
     <div className="app">
       <Navbar searchText={(text) => setTerm(text)} />
+      <Trends searchTrend={(trend) => setTerm(trend)} />
       <main>
         <div className="container min-h-screen p-5 mx-auto">
           <ImageSearch searchText={(event) => setTerm(event)} />
