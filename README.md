@@ -62,6 +62,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [learnetto](https://learnetto.com/blog/react-form-validation) & [ms_yogii](https://dev.to/ms_yogii/form-inputs-with-react-and-tailwind-57o2) - How to implement form validation in React
 - [BobbyHadz](https://bobbyhadz.com/blog/react-scroll-to-top#:~:text=Use%20the%20window.,of%20coordinates%20in%20the%20document.) - Scroll to the top of the Page in React.js
 - [StackOverflow](https://stackoverflow.com/questions/26069238/call-multiple-functions-onclick-reactjs) - Call multiple functions onClick ReactJS
+- [StackOverflow](https://stackoverflow.com/questions/2998784/how-to-output-numbers-with-leading-zeros-in-javascript) - How to output numbers with leading zeros in JavaScript?
 
 ### Continued development
 
@@ -81,3 +82,4 @@ I'd like to:
 - [Pixabay](https://pixabay.com/service/about/api/) - APIs
 - [Heroicons](https://heroicons.com/) - Icons
 - [GetWaves](https://getwaves.io/) - Wave SVG
+- [NetGuru](https://www.netguru.com/blog/inclusive-design-how-to-start) - Avatars
