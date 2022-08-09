@@ -31,7 +31,7 @@ export default function App() {
   }, [term]);
 
   return (
-    <div className="app">
+    <div className="app font-font-main">
       <Navbar searchText={(text) => setTerm(text)} />
       <Trends searchTrend={(trend) => setTerm(trend)} />
       <main>
