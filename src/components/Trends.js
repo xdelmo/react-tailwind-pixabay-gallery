@@ -89,6 +89,7 @@ function Trends({ searchTrend }) {
   const [trendsNow, setTrendsNow] = React.useState([]);
 
   // Search by clicking on trends
+
   function searchTag(trend) {
     searchTrend(trend);
   }
