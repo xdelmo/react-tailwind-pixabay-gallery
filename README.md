@@ -64,6 +64,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [StackOverflow](https://stackoverflow.com/questions/26069238/call-multiple-functions-onclick-reactjs) - Call multiple functions onClick ReactJS
 - [StackOverflow](https://stackoverflow.com/questions/2998784/how-to-output-numbers-with-leading-zeros-in-javascript) - How to output numbers with leading zeros in JavaScript
 - [StackOverflow](https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar) - How to create scrollable element in Tailwind without a scrollbar -[Daily Dev Tips](https://daily-dev-tips.com/posts/using-google-fonts-in-a-tailwind-project/) - Using Google Fonts in a Tailwind project
+- [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
 
 ### Continued development
 

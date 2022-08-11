@@ -39,7 +39,7 @@ function Navbar({ searchText }) {
 
         <div className="hidden md:block">
           <button>Log In</button>
-          <button className="px-2 py-1 ml-4 text-sm font-bold text-white transition-all bg-blue-500 border-4 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg">
+          <button className="ml-4 transition-all focus:ring-4 focus:outline-none focus:ring-blue-300 btn">
             Sign up
           </button>
         </div>

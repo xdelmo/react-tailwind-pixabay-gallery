@@ -16,4 +16,39 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  .btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border-color: #3b82f6;
+  }
+
+  .btn:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04))
+      drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+  }
+
+  .btn-disabled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border-color: #3b82f6;
+  }
 }

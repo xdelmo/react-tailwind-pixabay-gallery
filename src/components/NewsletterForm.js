@@ -58,7 +58,7 @@ function NewsletterForm() {
         </div>
 
         {/* SECOND BLOCK SUBMIT FORM */}
-        <div className="flex flex-col gap-2">
+        <form className="flex flex-col gap-4">
           <h2 className="text-2xl">Join us</h2>
           <label htmlFor="email">Email address:</label>
           <input
@@ -68,6 +68,7 @@ function NewsletterForm() {
             value={email}
             placeholder="your@email.com"
             onChange={(event) => handleUserInput(event)}
+            required
           />
           {!isEmailValid && email.length > 0 && (
             <p className="text-xs italic text-gray-300">
@@ -77,20 +78,20 @@ function NewsletterForm() {
           {isEmailValid ? (
             <button
               type="submit"
-              className="items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
+              className="items-center focus:ring-4 focus:outline-none focus:ring-blue-300 btn"
             >
-              Sign up
+              Subscribe
             </button>
           ) : (
             <button
               disabled
               type="submit"
-              className="items-center px-4 py-2 font-bold text-white bg-blue-500 border-blue-500 rounded"
+              className="items-center btn-disabled"
             >
-              Sign up
+              Subscribe
             </button>
           )}
-        </div>
+        </form>
       </div>
     </form>
   );

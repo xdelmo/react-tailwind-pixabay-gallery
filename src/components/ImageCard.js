@@ -59,7 +59,7 @@ function ImageCard({ image, searchForTag }) {
         <h3 className="text-sm">{image.user} </h3>
       </div>
 
-      <div className="flex flex-col flex-grow overflow-hidden rounded shadow-lg">
+      <div className="flex flex-col flex-grow overflow-hidden rounded-lg shadow-lg">
         <div>
           <img
             src={image.webformatURL}
@@ -116,7 +116,7 @@ function ImageCard({ image, searchForTag }) {
         {/* DOWNLOAD BUTTON */}
         <div className="px-4 py-0 ">
           <button
-            className="inline-flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 border-blue-500 rounded hover:bg-blue-700 hover:border-blue-700 hover:drop-shadow-lg hover:transition-all"
+            className="inline-flex items-center transition-all btn focus:ring-4 focus:outline-none focus:ring-blue-300"
             onClick={() => downloadImage(image.webformatURL, image.pageURL)}
           >
             <svg
