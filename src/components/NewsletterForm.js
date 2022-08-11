@@ -58,12 +58,11 @@ function NewsletterForm() {
         </div>
 
         {/* SECOND BLOCK SUBMIT FORM */}
-        <form className="flex flex-col gap-4">
-          <h2 className="text-2xl">Join us</h2>
+        <form className="flex flex-col gap-2">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            className={`text-black px-4 py-2 rounded border transition duration-150 ease-in-out placeholder-slate-600 ${backgroundColorInput}`}
+            className={`text-black px-4 py-2 rounded-lg placeholder-slate-600 ${backgroundColorInput}`}
             name="email"
             value={email}
             placeholder="your@email.com"
