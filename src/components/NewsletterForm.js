@@ -30,7 +30,7 @@ function NewsletterForm() {
   }
 
   return (
-    <form className="bg-teal-700 drop-shadow-lg">
+    <div className="bg-teal-700 drop-shadow-lg">
       <div className="container flex flex-col items-center justify-around gap-5 px-5 py-8 mx-auto text-white md:flex-row">
         {/* FIRST BLOCK TEXT FORM */}
         <div className="flex flex-col items-start justify-center">
@@ -92,7 +92,7 @@ function NewsletterForm() {
           )}
         </form>
       </div>
-    </form>
+    </div>
   );
 }
 
