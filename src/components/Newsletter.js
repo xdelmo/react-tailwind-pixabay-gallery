@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function Newsletter() {
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   // Create a function which gets event from the browser as a parameter
   function handleUserInput(event) {
@@ -22,16 +23,18 @@ function Newsletter() {
   }, [email]);
 
   // Utility variable to improve accessibility to form input
-  let backgroundColorInput = "bg-white";
+  let borderColorInput = "";
   if (email.length > 0 && !isEmailValid) {
-    backgroundColorInput = "bg-red-300";
+    borderColorInput = "border-red-600";
   } else if (isEmailValid) {
-    backgroundColorInput = "bg-green-300";
+    borderColorInput = "border-green-600";
   }
 
   function handleSubmit(e) {
     // prevent refresh page on button click
     e.preventDefault();
+    // to display elements according to subscription's state
+    setIsSubscribed(true);
   }
 
   return (
@@ -61,48 +64,50 @@ function Newsletter() {
             </svg>{" "}
             <span className="ml-3 text-3xl font-semibold">Newsletter</span>
           </div>
-          <p className="my-2 tracking-wide">
-            Join our photography community now!
-          </p>
-          {/* INPUT AND BUTTONS */}
-          <form
-            className="flex flex-col gap-2 md:flex-row"
-            onSubmit={handleSubmit}
-          >
-            <input
-              type="email"
-              className={`text-black px-4 py-2 rounded-lg placeholder-slate-600 md:w-2/4 ${backgroundColorInput}`}
-              name="email"
-              value={email}
-              placeholder="your@email.com"
-              onChange={(event) => handleUserInput(event)}
-              required
-            />
 
-            {!isEmailValid && email.length > 0 && (
-              <p className="text-xs italic font-bold text-red-300 md:hidden">
-                Please type a valid email!
+          {!isSubscribed ? (
+            <div className="">
+              <p className="my-2 tracking-wide">
+                Join our photography community now!
               </p>
-            )}
-
-            {isEmailValid ? (
-              <button className="items-center focus:ring-4 focus:outline-none focus:ring-blue-300 btn">
-                Subscribe
-              </button>
-            ) : (
-              <button disabled className="items-center btn-disabled">
-                Subscribe
-              </button>
-            )}
-          </form>
+              <form
+                className="flex flex-col gap-2 md:flex-row"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="email"
+                  className={`text-black px-4 py-2 rounded-lg border-2 placeholder-slate-600 md:w-2/4 ${borderColorInput}`}
+                  name="email"
+                  value={email}
+                  placeholder="your@email.com"
+                  onChange={(event) => handleUserInput(event)}
+                  required
+                />
+                {!isEmailValid && email.length > 0 && (
+                  <p className="text-xs italic font-bold text-red-300 md:hidden">
+                    Please type a valid email!
+                  </p>
+                )}
+                <button className="items-center focus:ring-4 focus:outline-none focus:ring-blue-300 btn">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          ) : (
+            <p className="my-2 italic ">
+              Thank you for joining our newsletter!
+            </p>
+          )}
           {!isEmailValid && email.length > 0 && (
             <p className="hidden my-2 text-xs italic font-bold text-red-300 md:block">
               Please type a valid email!
             </p>
           )}
-          <p className="mt-2 text-xs italic text-gray-300">
-            7 days free trial. No credit card required.
-          </p>
+          {!isSubscribed && (
+            <p className="mt-2 text-xs italic text-gray-300">
+              Your email is safe with us. We don't spam.
+            </p>
+          )}
         </div>
       </div>
     </div>
