@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewsletterForm() {
+function Newsletter() {
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
 
@@ -101,4 +101,4 @@ function NewsletterForm() {
   );
 }
 
-export default NewsletterForm;
+export default Newsletter;
