@@ -3,7 +3,7 @@ import ImageCard from "./components/ImageCard";
 import Footer from "./components/Footer";
 import ImageSearch from "./components/ImageSearch";
 import Navbar from "./components/Navbar";
-import NewsletterForm from "./components/NewsletterForm";
+import Newsletter from "./components/Newsletter";
 import Trends from "./components/Trends";
 
 export default function App() {
@@ -75,18 +75,14 @@ export default function App() {
           )}
         </div>
       </main>
-      <svg
-        className="drop-shadow-lg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0F766E"
           fillOpacity="1"
           d="M0,224L80,240C160,256,320,288,480,282.7C640,277,800,235,960,218.7C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
       </svg>
-      <NewsletterForm />
+      <Newsletter />
       <hr></hr>
       <Footer />
     </div>

@@ -67,6 +67,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Daily Dev Tips](https://daily-dev-tips.com/posts/using-google-fonts-in-a-tailwind-project/) - Using Google Fonts in a Tailwind project
 - [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
 - [Nikhil Gupta](https://medium.com/@nikhil_gupta/how-to-disable-background-scroll-when-a-modal-side-drawer-is-open-in-react-js-999653a8eebb) - How to disable Background Scroll when a ‘Modal/Side-Drawer’ is open in React JS
+- [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
 
 ### Continued development
 
