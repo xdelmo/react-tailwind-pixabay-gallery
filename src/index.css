@@ -51,4 +51,28 @@
     border-radius: 0.5rem;
     border-color: #3b82f6;
   }
+
+  .text-underlined {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    z-index: 1;
+  }
+
+  .text-underlined::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.07em;
+    height: 0.2em;
+    width: 100%;
+    background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+    z-index: -1;
+    transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  }
+
+  .text-underlined:hover::after {
+    height: 0.3em;
+  }
 }

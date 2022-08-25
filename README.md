@@ -48,6 +48,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React.JS
 - FlexBox
 - Tailwind CSS
+- Framer Motion
 
 ### Useful resources
 
@@ -68,6 +69,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
 - [Nikhil Gupta](https://medium.com/@nikhil_gupta/how-to-disable-background-scroll-when-a-modal-side-drawer-is-open-in-react-js-999653a8eebb) - How to disable Background Scroll when a ‘Modal/Side-Drawer’ is open in React JS
 - [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
+- [Framer](https://www.framer.com/docs/examples/#scroll-triggered-animations) - Scroll-triggered animations
+- [Framer](https://www.framer.com/docs/animate-presence/) - Animate components when they're removed from the React tree
+- [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/) How to Import SVGs in a React app
 
 ### Continued development
 
@@ -78,6 +82,7 @@ I'd like to:
 - ~~Save last search term on localStorage~~
 - ~~Search new photos clicking on tags~~
 - ~~Add a mobile navbar~~
+- ~~Beautify app with Framer Motion's animations~~
 
 ## Author
 

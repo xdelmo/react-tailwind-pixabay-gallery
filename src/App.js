@@ -5,6 +5,7 @@ import ImageSearch from "./components/ImageSearch";
 import Navbar from "./components/Navbar";
 import Newsletter from "./components/Newsletter";
 import Trends from "./components/Trends";
+import { motion } from "framer-motion";
 
 export default function App() {
   const [images, setImages] = useState([]);
@@ -29,6 +30,20 @@ export default function App() {
     // Set term to localStorage everytime term changes onSubmit
     localStorage.setItem("term", JSON.stringify(term));
   }, [term]);
+
+  const gridVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.75,
+        ease: "backInOut",
+      },
+    },
+  };
 
   return (
     <div className="app font-font-main">
@@ -63,7 +78,12 @@ export default function App() {
               <span className="sr-only">Loading...</span>
             </div>
           ) : (
-            <div className="grid gap-4 mt-16 md:grid-cols-2 lg:grid-cols-3">
+            <motion.div
+              className="grid gap-4 mt-16 md:grid-cols-2 lg:grid-cols-3"
+              variants={gridVariants}
+              initial="hidden"
+              animate="show"
+            >
               {images.map((image) => (
                 <ImageCard
                   key={image.id}
@@ -71,7 +91,7 @@ export default function App() {
                   searchForTag={(tag) => setTerm(tag)}
                 />
               ))}
-            </div>
+            </motion.div>
           )}
         </div>
       </main>

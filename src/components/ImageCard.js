@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // Destructuring of props using {image}
 function ImageCard({ image, searchForTag }) {
@@ -48,7 +49,13 @@ function ImageCard({ image, searchForTag }) {
   }
 
   return (
-    <div className="flex flex-col flex-grow">
+    <motion.div
+      className="flex flex-col flex-grow"
+      // simple animation
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       {/* Avatar + nickname section */}
       <div className="flex items-center justify-start gap-2 px-4 py-3 text-xl font-bold">
         <img
@@ -152,7 +159,7 @@ function ImageCard({ image, searchForTag }) {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

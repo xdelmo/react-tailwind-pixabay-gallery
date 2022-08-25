@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Trends({ searchTrend }) {
   // WARNING in [eslint]
@@ -94,9 +95,30 @@ function Trends({ searchTrend }) {
     searchTrend(trend);
   }
 
+  const trendsVariants = {
+    hidden: {
+      opacity: 0,
+      x: "-100vw",
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        delay: 0.75,
+        duration: 0.75,
+      },
+    },
+  };
+
   return (
-    <div className="text-white bg-teal-700 ">
-      <div className="container flex flex-row items-center gap-4 px-4 py-5 mx-auto">
+    <motion.div
+      className="text-white bg-teal-700 border-t border-white -z-30 drop-shadow-lg"
+      variants={trendsVariants}
+      initial="hidden"
+      animate="show"
+    >
+      <div className="container flex flex-row items-center gap-4 px-4 py-5 mx-auto ">
         <div className="pr-4 font-bold border-r-2 heading">
           <span>Trending</span>
         </div>
@@ -106,7 +128,7 @@ function Trends({ searchTrend }) {
           <ul className="flex flex-row justify-between gap-4">{trendsNow}</ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import WebSVG from "./WebSVG";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
@@ -37,15 +39,37 @@ function Newsletter() {
     setIsSubscribed(true);
   }
 
+  const formCardVariants = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+    },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.75,
+      },
+    },
+  };
+
   return (
     <div className="bg-teal-700">
       <div className="container gap-5 px-5 py-8 mx-auto text-white bg-teal-700 border-black ">
-        <div className="relative p-8 overflow-hidden bg-teal-800 rounded-lg shadow-lg">
-          <img
+        <motion.div
+          className="relative p-8 overflow-hidden bg-teal-800 rounded-lg shadow-lg"
+          variants={formCardVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {/* import SVG as React component */}
+          <WebSVG />
+          {/* <img
             src="/images/web-world.png"
             className="absolute hidden w-2/6 -right-10 -bottom-30 md:block"
             alt="world connections"
-          />
+          /> */}
           {/* ICON AND TITLE */}
           <div className="flex flex-row items-center">
             <svg
@@ -64,7 +88,6 @@ function Newsletter() {
             </svg>{" "}
             <span className="ml-3 text-3xl font-semibold">Newsletter</span>
           </div>
-
           {!isSubscribed ? (
             <div className="">
               <p className="my-2 tracking-wide">
@@ -94,7 +117,7 @@ function Newsletter() {
               </form>
             </div>
           ) : (
-            <p className="my-2 italic ">
+            <p className="my-2 italic text-underlined">
               Thank you for joining our newsletter!
             </p>
           )}
@@ -108,7 +131,7 @@ function Newsletter() {
               Your email is safe with us. We don't spam.
             </p>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
