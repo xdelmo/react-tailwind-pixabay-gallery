@@ -71,7 +71,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [StackOverflow](https://stackoverflow.com/questions/70647076/how-to-make-element-invisible-in-mobile-size-but-visible-in-laptop-size-in-tailw) - How to make element invisible in mobile size but visible in laptop size in TailwindCSS
 - [Framer](https://www.framer.com/docs/examples/#scroll-triggered-animations) - Scroll-triggered animations
 - [Framer](https://www.framer.com/docs/animate-presence/) - Animate components when they're removed from the React tree
-- [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/) How to Import SVGs in a React app
+- [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/) - How to Import SVGs in a React app
+- [Paul Gaumer](https://www.paulgaumer.com/blog/handle-animation-state-with-framer-motion) - Pulse animation with Framer Motion
 
 ### Continued development
 
@@ -94,3 +95,4 @@ I'd like to:
 - [Heroicons](https://heroicons.com/) - Icons
 - [GetWaves](https://getwaves.io/) - Wave SVG
 - [NetGuru](https://www.netguru.com/blog/inclusive-design-how-to-start) - Avatars
+- [Icons8](https://icons8.com/icon/62856/github) - Github SVG
