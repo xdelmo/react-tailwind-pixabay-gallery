@@ -5,6 +5,7 @@ import ImageSearch from "./components/ImageSearch";
 import Navbar from "./components/Navbar";
 import Newsletter from "./components/Newsletter";
 import Trends from "./components/Trends";
+import ScrollTopButton from "./components/ScrollTopButton";
 import { motion } from "framer-motion";
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
       <Navbar searchText={(text) => setTerm(text)} />
       <Trends searchTrend={(trend) => setTerm(trend)} />
       <main>
+        <ScrollTopButton />
         <div className="container min-h-screen p-5 mx-auto">
           <ImageSearch searchText={(event) => setTerm(event)} />
           {/* Error message */}

@@ -75,4 +75,16 @@
   .text-underlined:hover::after {
     height: 0.3em;
   }
+
+  .btn-scrollToTop {
+    position: fixed;
+    width: 4em;
+    height: 4em;
+    bottom: 3em;
+    right: 4em;
+    border-radius: 100vmax;
+    /* width: 2em;
+    left: 90%;
+    bottom: 40px; */
+  }
 }
